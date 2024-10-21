@@ -1,0 +1,696 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(43, 43, 43, 1);
+    color: white;
+}
+
+.container-header{
+    min-height: 110vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(download.jpeg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav{
+    height: 50px;
+    background-color: rgb(121, 121, 121);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+section{
+    display: none;
+}
+
+.container-nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul{
+    
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+ul li{
+    list-style: none;
+    transition: 0.5s;
+    background-color: rgba(61, 61, 61, 0);
+    height: 25px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+
+}
+
+a{
+    list-style: none;
+    color: white;
+    transition: 0.5s;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+
+
+li:hover{
+    background-color: rgb(61, 61, 61);
+    height: 25px;
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+
+
+.logo{
+    font-family: "Sacramento", cursive;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.new-icon img{
+    height: 30px;
+}
+
+.icon{
+    display: none;
+}
+
+.card-head{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: end;
+}
+
+.card-head h5{
+    margin-top: -300px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    
+}
+
+.card-head h1{
+    font-family: "Sacramento", cursive;
+    font-size: 70px;
+    margin-top: -280px;
+
+}
+
+.card-head button{
+    outline: none;
+    background-color: none;
+    background: none;
+    border: none;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 50px;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -180px;
+    outline: 1px solid white;
+    border-radius: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.card-head button:hover{
+    background-color: rgba(0, 0, 0, 0.815);
+    filter: drop-shadow( 3px 5px 10px rgb(255, 255, 255));
+}
+
+audio{
+    background-color: aqua;
+    background: darkblue;
+    display: none;
+}
+
+.musik button{
+    margin-left: 50vh;
+    margin-top: -100vh;
+    position: absolute;
+}
+
+.musik img{
+    height: 25px;
+}
+
+@media (max-width:600px){
+
+    .musik button{
+        margin-left: -1vh;
+        height: 40px;
+        width: 170px;
+        font-size: 15px;
+    }
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .container-nav{
+        display: flex;
+        justify-content:space-between;
+
+    }
+
+    .container-nav ul{
+        position: absolute;
+        left: 0;
+        right: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(121, 121, 121, 0.31);
+        margin-top: 25px;
+        border-radius: 0px 0px 0px 10px;
+        height: 320px;
+        z-index: 1000;
+    }
+
+    ul{
+        gap: 30px;
+    }
+    .logo{
+        font-size: 20px;
+        margin-left: 50px;
+    }
+
+    .icon{
+        display: contents;
+        cursor: pointer;
+    }
+
+}
+
+/* HERO SECTION 1 */
+
+.container-sec1{
+    min-height: 100vh;
+    background-color: rgba(43, 43, 43, 1);
+}
+
+.logo-open{
+    display: flex;
+    justify-content: center;
+}
+
+.logo-open img{
+    height: 250px;
+}
+
+.card-sec1{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.kata-pembuka p{
+    font-family: "Sacramento", cursive;
+    color: rgb(206, 137, 17);
+    font-size: 50px;
+    font-weight: bold;
+
+}
+
+.pembuka{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.ucapan p{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 35px;
+    color: rgb(206, 137, 17);
+}
+
+.dan{
+    background-color: rgb(206, 137, 17);
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dan h1{
+    font-family: "Sacramento", cursive;
+    font-size: 100px;
+
+}
+
+.bio-mempelai{
+    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 100px;
+    
+}
+
+.nama h1{
+    font-family: "Sacramento", cursive;
+    font-size: 70px;
+    color: rgb(206, 137, 17);
+}
+
+.mertua p{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    color: rgb(206, 137, 17);
+    font-size: 20px;
+    margin-top: -20px;
+
+}
+
+.card-waktu{
+    color: rgb(206, 137, 17);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.card-waktu p{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 30px;
+
+}
+
+.card-waktu h1{
+    font-family: "Sacramento", cursive;
+    font-size: 50px;
+}
+
+.container-timer{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.judul p{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 25px;
+    color: rgb(206, 137, 17);
+}
+
+.card-timer{
+    display: flex;
+    gap: 50px;
+    margin-top: 10px;
+    text-align: center;
+    color: rgb(206, 137, 17);
+}
+
+.button-timer button{
+    background-color: burlywood;
+    height: 100px;
+    width:100px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
+
+/* RESONSIVE SECTION 1 */
+
+@media (max-width:600px){
+    .logo-open img{
+        height: 110px;
+    }
+
+    .kata-pembuka p{
+        font-size: 25px;
+    }
+
+    .ucapan p{
+        font-size: 18px;
+    }
+
+    .nama h1{
+        font-size: 50px;
+    }
+
+    .bio-mempelai{
+        gap: 30px;
+    }
+
+    .mertua p{
+        font-size: 12px;
+    }
+
+    .dan{
+        height: 60px;
+        width: 60px;
+    }
+
+    .dan h1{
+        font-size: 70px;
+    }
+
+    .card-waktu p{
+        font-size: 20px;
+    }
+
+    .card-waktu h1{
+        font-size: 25px;
+    }
+
+    .button-timer button{
+        height: 70px;
+        width: 70px;
+    }
+
+}
+
+section{
+    background-color: rgba(43, 43, 43, 1);
+    text-align: center;
+
+}
+
+.card-akad{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    margin-top: 120px;
+}
+
+.garis-akad{
+    background-color: rgb(206, 137, 17);
+    height: 120px;
+    width: 2px;
+}
+
+.akad{
+    color: rgb(206, 137, 17);
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    text-align: center;
+
+}
+
+.akad p{
+    font-size: 50px;
+}
+
+.waktu p{
+    font-size: 60px;
+    font-family: "Sacramento", cursive;
+}
+
+.card-tempat{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: rgb(206, 137, 17);
+    margin-top: 30px;
+}
+
+.card-tempat p{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 25px;
+}
+
+.card-tempat h1{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    font-size: 30px;
+    color: rgb(215, 215, 215);
+}
+
+.lokasi{
+    height: 230px;
+    overflow: hidden;
+    border-radius: 10px;
+
+}
+
+.lokasi img{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.lokasi:hover img{
+    transform: scale(125%);
+    border-radius: 10px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.744));
+}
+
+
+
+.card-lokasi{
+    display: flex;
+    justify-content: center;
+}
+
+.card-penutup{
+    font-family: "Edu VIC WA NT Beginner", cursive;
+    color: rgb(206, 137, 17);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 100px;
+    font-size: 28px;
+}
+
+.fot-logo img{
+    height: 250px;
+}
+
+.fot-logo{
+    display: flex;
+    justify-content: center;
+    
+}
+
+
+/* RESPONSIVE SECTION 2 */
+
+
+@media (max-width:600px){
+
+    .card-akad{
+        margin-top: -70px;
+    }
+    .akad p{
+        font-size: 25px;
+
+    }
+
+    .card-akad{
+        gap: 20px;
+    }
+    .card-tempat p{
+        font-size: 17px;
+    }
+
+    .card-tempat h1{
+        font-size: 20px;
+    }
+
+    .lokasi{
+        height: 170px;
+    }
+
+    .card-penutup{
+        font-size: 20px;
+        margin-top: 35px;
+    }
+
+    .fot-logo img{
+        height: 110px;
+    }
+}
+
+.container-sec3{
+    background-image: linear-gradient(rgba(43, 43, 43, 1), rgb(41, 0, 0));
+    min-height: 95vh;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-hadiah{
+    display: flex;
+    justify-content: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    
+}
+
+.text-hadiah h1{
+    margin-top: -100px;
+    font-size: 45px;
+}
+
+.gambar-kado img{
+    height: 150px;
+    cursor: pointer;
+
+}
+
+.gambar-kado{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    transition: all 1.0s;
+}
+
+
+.gambar-kado:hover{
+    gap: 100px;
+    transform: rotate(-20deg);
+    transition: all 1.0s;
+
+}
+.box {
+    position: absolute;
+    top: 425%;
+    left: 53.5%;
+    display: flex;
+    transform-style: preserve-3d;
+    perspective: 500px;
+  }
+  .box .item {
+    position: absolute;
+    top: calc(50% - 150px);
+    left: calc(50% - 100px);
+    width: 200px;
+    height: 250px;
+    background: #fff;
+    transition: 0.5s;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    user-select: none;
+    -webkit-box-reflect: below 1px
+      linear-gradient(transparent, transparent, #0002);
+  }
+  .box .item:nth-child(1) {
+    transform: translate3d(-250px, 0, 0) scale(0.8) rotateY(25deg);
+    z-index: 1;
+  }
+  .box .item:nth-child(2) {
+    transform: translate3d(-250px, 0, 0) scale(0.8) rotateY(25deg);
+    z-index: 2;
+  }
+  .box .item:nth-child(3) {
+    transform: translate3d(-150px, 0, 0) scale(0.9) rotateY(15deg);
+    z-index: 3;
+  }
+  .box .item:nth-child(4) {
+    transform: translate3d(0px, 0, 0) scale(1) rotateY(0deg);
+    z-index: 4;
+  }
+  .box .item:nth-child(5) {
+    transform: translate3d(150px, 0, 0) scale(0.9) rotateY(-15deg);
+    z-index: 3;
+  }
+  .box .item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .buttons {
+    position: absolute;
+    top: 440%;
+    left: 45%;
+    bottom: 75px;
+    display: flex;
+    gap: 20px;
+    border-radius: 5px;
+  }
+  .buttons span {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.5;
+  }
+  .buttons span:hover {
+    opacity: 1;
+  }
+  .buttons span:before {
+    content: "";
+    position: absolute;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    rotate: -45deg;
+  }
+  .buttons span:last-child::before {
+    content: "";
+    position: absolute;
+    left: initial;
+    right: 20px;
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    rotate: 135deg;
+  }
+  
+
+@media (max-width:300px){
+    .gambar-kado img{
+        height: 100px;
+    }
+}
+
